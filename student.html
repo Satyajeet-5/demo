@@ -44,7 +44,7 @@
             teacherLocation.latitude, teacherLocation.longitude
           );
 
-          if (distance <= 100) {
+          if (distance <= 50) {
             document.getElementById("status").innerText = 
               `✅ Attendance Done. Distance from teacher: ${distance.toFixed(2)} meters. \n
              latitude :${studentLat} \n longitude: ${studentLon}`;
