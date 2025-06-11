@@ -46,7 +46,8 @@
 
           if (distance <= 100) {
             document.getElementById("status").innerText = 
-              `✅ Attendance Done. Distance from teacher: ${distance.toFixed(2)} meters.`;
+              `✅ Attendance Done. Distance from teacher: ${distance.toFixed(2)} meters. \n
+             latitude :${studentLat} \n longitude: ${studentLon}`;
           } else {
             document.getElementById("status").innerText = 
               `❌ You are too far! (${distance.toFixed(2)} meters away).`;
