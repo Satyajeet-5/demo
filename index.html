@@ -11,17 +11,7 @@
   <button onclick="goToStudentPage()">Go to Student Page</button>
 
   <script>
-    // Read the current count from localStorage (or default to 0)
-    let count = parseInt(localStorage.getItem('pageLeaveCount')) || 0;
-
-    // Show the current count in the HTML
-    document.getElementById('count').textContent = count;
-
-    // Increment and store count before unloading the page
-    window.addEventListener('beforeunload', function () {
-      count += 1;
-      localStorage.setItem('pageLeaveCount', count);
-    });
+    
 
     // Function to navigate to student.html
     function goToStudentPage() {
